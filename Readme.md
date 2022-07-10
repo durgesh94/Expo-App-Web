@@ -1,8 +1,12 @@
 # Expo Mobile + Web
-* Support
+* Supports
 1. iOS
 2. Android
 3. Web
+
+* Uses
+1. Expo (React-Native)
+2. NativeBase (UI Library)
 
 # NativeBase TypeScript Expo Template
 
