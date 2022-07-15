@@ -4,4 +4,5 @@ export type MenuType = {
     description: string;
     price: number;
     img: string;
+    quantity: number;
 }

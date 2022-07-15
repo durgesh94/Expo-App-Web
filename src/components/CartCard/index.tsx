@@ -2,6 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Heading, HStack, Box, Text, Pressable } from "native-base"
 import { useSelector } from "react-redux"
 import { selectCartItems, selectCartTotal } from "../../data/store/features/CartSlice";
+import { priceFormat } from "../../utils/priceFormat";
 
 export const CartCard = () => {
 
@@ -9,7 +10,7 @@ export const CartCard = () => {
     const items = useSelector(selectCartItems);
     const navigation: any = useNavigation();
 
-    if(items.length === 0) return null;
+    if (items.length === 0) return null;
 
     return (
         <Box
@@ -40,7 +41,7 @@ export const CartCard = () => {
                         color={"white"}
                         fontSize="lg"
                         fontWeight="bold">
-                        ₹{cartTotal}
+                        {priceFormat(cartTotal)}
                     </Text>
                 </HStack>
             </Pressable>

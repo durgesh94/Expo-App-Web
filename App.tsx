@@ -7,6 +7,8 @@ import { Restaurant } from "./src/screens/Restaurant";
 import { Provider } from "react-redux";
 import { store } from "./src/data/store";
 import { Cart } from "./src/screens/Cart";
+import { Preparing } from "./src/screens/Preparing";
+import { Delivery } from "./src/screens/Delivery";
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +33,18 @@ export default function App() {
                 presentation: "modal",
                 headerShown: false
               }}
+            />
+            <Stack.Screen
+              name="Preparing"
+              component={Preparing}
+              options={{
+                presentation: 'fullScreenModal',
+                headerShown: false
+              }}
+            />
+            <Stack.Screen
+              name="Delivery"
+              component={Delivery}
             />
           </Stack.Navigator>
         </Provider>

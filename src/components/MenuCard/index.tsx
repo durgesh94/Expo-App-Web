@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { MenuType } from "../../data/models/Menu";
 import { RootState } from "../../data/store";
 import { addToCart, removeFromCart, selectCartItemsById } from "../../data/store/features/CartSlice";
+import { priceFormat } from "../../utils/priceFormat";
 import { IconMinus } from "../icons/IconMinus";
 import { IconPlus } from "../icons/IconPlus";
 
@@ -39,7 +40,7 @@ export const MenuCard = ({ item }: MenuCardProps) => {
                     <VStack flex={1} space={1}>
                         <Heading size={"sm"} isTruncated>{item?.name}</Heading>
                         <Text color={"gray.500"} numberOfLines={2}>{item?.description}</Text>
-                        <Text color={"gray.500"}>₹{item?.price}</Text>
+                        <Text color={"gray.500"}>{priceFormat(item?.price)}</Text>
                     </VStack>
                     <Image
                         source={{ uri: item?.img }}
