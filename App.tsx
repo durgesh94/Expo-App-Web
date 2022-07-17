@@ -38,13 +38,16 @@ export default function App() {
               name="Preparing"
               component={Preparing}
               options={{
-                presentation: 'fullScreenModal',
+                // presentation: 'fullScreenModal', //lottie-react-native not support
                 headerShown: false
               }}
             />
             <Stack.Screen
               name="Delivery"
               component={Delivery}
+              options={{
+                headerShown: false
+              }}
             />
           </Stack.Navigator>
         </Provider>

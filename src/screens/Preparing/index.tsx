@@ -13,7 +13,7 @@ export const Preparing = () => {
     useEffect(() => {
         setTimeout(() => {
             navigation.navigate('Delivery');
-        }, 3000);
+        }, 4000);
     }, []);
 
     return (
@@ -35,6 +35,7 @@ export const Preparing = () => {
                         height: 200,
                         backgroundColor: '#00CCBB',
                     }}
+                    // Find more Lottie files at https://lottiefiles.com/featured
                     source={require('../../../assets/img/burger.json')}
                 />
             }

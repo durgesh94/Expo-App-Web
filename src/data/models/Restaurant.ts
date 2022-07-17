@@ -6,5 +6,7 @@ export type RestauranType = {
     rating: number;
     address: string;
     img: string;
+    latitude: number;
+    longitude: number;
     menu: any;
 }

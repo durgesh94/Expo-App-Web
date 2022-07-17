@@ -12,6 +12,8 @@ export const Features = [
                 address: "Nearby - Clink street",
                 description: "KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken. It is the world's second-largest restaurant chain after McDonald's, with 22,621 locations globally in 150 countries as of December 2019. The chain is a subsidiary of Yum!",
                 img: "https://indiaeducationdiary.in/wp-content/uploads/2020/10/IMG-20201024-WA0014.jpg",
+                latitude: 53.486450,
+                longitude: -2.637600,
                 menu: [
                     {
                         id: 1,
@@ -58,6 +60,8 @@ export const Features = [
                 address: "Nearby - Wakad Highway",
                 description: "Burger King is an American-based multinational chain of hamburger fast food restaurants. Headquartered in Miami-Dade County, Florida, the company was founded in 1953 as Insta-Burger King, a Jacksonville, Florida–based restaurant chain",
                 img: "https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2022-07/bking.jpg",
+                latitude: 51.516790,
+                longitude: -0.130770,
                 menu: [
                     {
                         id: 1,
